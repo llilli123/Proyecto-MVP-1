@@ -48,6 +48,15 @@ namespace Proyecto_MVP_1.Presenters
             _view.Hide();
         }
 
+        private void OnNavigateToDashboard(object s, EventArgs e)
+        {
+            var v = new ClientesView();
+            // si tienes MVP para Clientes, crea su presenter aquí
+            v.FormClosed += (_, __) => _view.Show();
+            v.Show();
+            _view.Hide();
+        }
+
         private void OnLogout(object sender, EventArgs e)
         {
             // Lógica para volver al Login

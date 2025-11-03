@@ -35,7 +35,14 @@ namespace ProyectoLoginMVP.Presenters
                 _view.MostrarMensaje("Inicio de sesión exitoso ✅");
 
                 // Abre el Dashboard
-                var dashboard = new DashboardView();
+                var dashboard = new DashboardView();                     // 1) crear la vista
+                var dashPresenter = new DashboardPresenter(dashboard);   // 2) crear el PRESENTER (suscribe eventos)
+                dashboard.FormClosed += (_, __) =>                       // 3) qué pasa al cerrar hijos
+                {
+                    // Elige una:
+                    // ((Form)_view).Show();    // volver al login
+                    Application.Exit();         // o cerrar la app completa
+                };
                 dashboard.Show();
 
                 // Oculta la ventana de login
