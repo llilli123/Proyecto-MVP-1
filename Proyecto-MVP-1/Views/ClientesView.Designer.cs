@@ -86,7 +86,7 @@ namespace Proyecto_MVP_1.Views
             this.labelTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
             this.labelTitulo.Location = new System.Drawing.Point(24, 16);
             this.labelTitulo.Name = "labelTitulo";
-            this.labelTitulo.Size = new System.Drawing.Size(282, 41);
+            this.labelTitulo.Size = new System.Drawing.Size(224, 32);
             this.labelTitulo.TabIndex = 4;
             this.labelTitulo.Text = "Gestión de Clientes";
             // 
@@ -97,7 +97,7 @@ namespace Proyecto_MVP_1.Views
             this.labelSubtitulo.ForeColor = System.Drawing.Color.DimGray;
             this.labelSubtitulo.Location = new System.Drawing.Point(26, 52);
             this.labelSubtitulo.Name = "labelSubtitulo";
-            this.labelSubtitulo.Size = new System.Drawing.Size(279, 20);
+            this.labelSubtitulo.Size = new System.Drawing.Size(223, 15);
             this.labelSubtitulo.TabIndex = 3;
             this.labelSubtitulo.Text = "Administra la información de tus clientes";
             // 
@@ -117,7 +117,7 @@ namespace Proyecto_MVP_1.Views
             this.textBoxBuscar.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.textBoxBuscar.Location = new System.Drawing.Point(118, 5);
             this.textBoxBuscar.Name = "textBoxBuscar";
-            this.textBoxBuscar.Size = new System.Drawing.Size(700, 29);
+            this.textBoxBuscar.Size = new System.Drawing.Size(700, 24);
             this.textBoxBuscar.TabIndex = 1;
             // 
             // labelBuscarPlaceholder
@@ -127,7 +127,7 @@ namespace Proyecto_MVP_1.Views
             this.labelBuscarPlaceholder.ForeColor = System.Drawing.Color.Silver;
             this.labelBuscarPlaceholder.Location = new System.Drawing.Point(128, 9);
             this.labelBuscarPlaceholder.Name = "labelBuscarPlaceholder";
-            this.labelBuscarPlaceholder.Size = new System.Drawing.Size(109, 20);
+            this.labelBuscarPlaceholder.Size = new System.Drawing.Size(89, 15);
             this.labelBuscarPlaceholder.TabIndex = 2;
             this.labelBuscarPlaceholder.Text = "Buscar cliente...";
             // 
@@ -260,7 +260,7 @@ namespace Proyecto_MVP_1.Views
             this.labelPanelTitulo.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
             this.labelPanelTitulo.Location = new System.Drawing.Point(16, 16);
             this.labelPanelTitulo.Name = "labelPanelTitulo";
-            this.labelPanelTitulo.Size = new System.Drawing.Size(131, 25);
+            this.labelPanelTitulo.Size = new System.Drawing.Size(98, 19);
             this.labelPanelTitulo.TabIndex = 0;
             this.labelPanelTitulo.Text = "Nuevo Cliente";
             // 
@@ -271,7 +271,7 @@ namespace Proyecto_MVP_1.Views
             this.labelNombre.ForeColor = System.Drawing.Color.DimGray;
             this.labelNombre.Location = new System.Drawing.Point(16, 56);
             this.labelNombre.Name = "labelNombre";
-            this.labelNombre.Size = new System.Drawing.Size(132, 20);
+            this.labelNombre.Size = new System.Drawing.Size(105, 15);
             this.labelNombre.TabIndex = 1;
             this.labelNombre.Text = "Nombre completo";
             // 
@@ -281,7 +281,7 @@ namespace Proyecto_MVP_1.Views
             this.textBoxNombre.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.textBoxNombre.Location = new System.Drawing.Point(16, 76);
             this.textBoxNombre.Name = "textBoxNombre";
-            this.textBoxNombre.Size = new System.Drawing.Size(266, 29);
+            this.textBoxNombre.Size = new System.Drawing.Size(266, 24);
             this.textBoxNombre.TabIndex = 2;
             // 
             // labelTelefono
@@ -291,7 +291,7 @@ namespace Proyecto_MVP_1.Views
             this.labelTelefono.ForeColor = System.Drawing.Color.DimGray;
             this.labelTelefono.Location = new System.Drawing.Point(16, 112);
             this.labelTelefono.Name = "labelTelefono";
-            this.labelTelefono.Size = new System.Drawing.Size(67, 20);
+            this.labelTelefono.Size = new System.Drawing.Size(52, 15);
             this.labelTelefono.TabIndex = 3;
             this.labelTelefono.Text = "Teléfono";
             // 
@@ -301,7 +301,7 @@ namespace Proyecto_MVP_1.Views
             this.textBoxTelefono.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.textBoxTelefono.Location = new System.Drawing.Point(16, 132);
             this.textBoxTelefono.Name = "textBoxTelefono";
-            this.textBoxTelefono.Size = new System.Drawing.Size(266, 29);
+            this.textBoxTelefono.Size = new System.Drawing.Size(266, 24);
             this.textBoxTelefono.TabIndex = 4;
             // 
             // labelCorreo
@@ -311,7 +311,7 @@ namespace Proyecto_MVP_1.Views
             this.labelCorreo.ForeColor = System.Drawing.Color.DimGray;
             this.labelCorreo.Location = new System.Drawing.Point(16, 168);
             this.labelCorreo.Name = "labelCorreo";
-            this.labelCorreo.Size = new System.Drawing.Size(132, 20);
+            this.labelCorreo.Size = new System.Drawing.Size(105, 15);
             this.labelCorreo.TabIndex = 5;
             this.labelCorreo.Text = "Correo electrónico";
             // 
@@ -321,7 +321,7 @@ namespace Proyecto_MVP_1.Views
             this.textBoxCorreo.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.textBoxCorreo.Location = new System.Drawing.Point(16, 188);
             this.textBoxCorreo.Name = "textBoxCorreo";
-            this.textBoxCorreo.Size = new System.Drawing.Size(266, 29);
+            this.textBoxCorreo.Size = new System.Drawing.Size(266, 24);
             this.textBoxCorreo.TabIndex = 6;
             // 
             // labelDocumento
@@ -331,7 +331,7 @@ namespace Proyecto_MVP_1.Views
             this.labelDocumento.ForeColor = System.Drawing.Color.DimGray;
             this.labelDocumento.Location = new System.Drawing.Point(16, 224);
             this.labelDocumento.Name = "labelDocumento";
-            this.labelDocumento.Size = new System.Drawing.Size(87, 20);
+            this.labelDocumento.Size = new System.Drawing.Size(70, 15);
             this.labelDocumento.TabIndex = 7;
             this.labelDocumento.Text = "Documento";
             // 
@@ -341,7 +341,7 @@ namespace Proyecto_MVP_1.Views
             this.textBoxDocumento.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.textBoxDocumento.Location = new System.Drawing.Point(16, 244);
             this.textBoxDocumento.Name = "textBoxDocumento";
-            this.textBoxDocumento.Size = new System.Drawing.Size(266, 29);
+            this.textBoxDocumento.Size = new System.Drawing.Size(266, 24);
             this.textBoxDocumento.TabIndex = 8;
             // 
             // checkBoxActivo
@@ -350,7 +350,7 @@ namespace Proyecto_MVP_1.Views
             this.checkBoxActivo.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.checkBoxActivo.Location = new System.Drawing.Point(16, 284);
             this.checkBoxActivo.Name = "checkBoxActivo";
-            this.checkBoxActivo.Size = new System.Drawing.Size(121, 24);
+            this.checkBoxActivo.Size = new System.Drawing.Size(98, 19);
             this.checkBoxActivo.TabIndex = 9;
             this.checkBoxActivo.Text = "Cliente activo";
             this.checkBoxActivo.UseVisualStyleBackColor = true;
@@ -376,10 +376,11 @@ namespace Proyecto_MVP_1.Views
             this.buttonGuardar.TabIndex = 11;
             this.buttonGuardar.Text = "Guardar";
             this.buttonGuardar.UseVisualStyleBackColor = false;
+            this.buttonGuardar.Click += new System.EventHandler(this.buttonGuardar_Click);
             // 
             // ClientesView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(1188, 686);
