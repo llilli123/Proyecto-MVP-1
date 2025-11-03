@@ -179,6 +179,7 @@ namespace Proyecto_MVP_1.Views
             this.buttonNavClientes.Text = "Clientes";
             this.buttonNavClientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonNavClientes.UseVisualStyleBackColor = true;
+            this.buttonNavClientes.Click += new System.EventHandler(this.buttonNavClientes_Click_1);
             // 
             // buttonNavEquipos
             // 
@@ -194,6 +195,7 @@ namespace Proyecto_MVP_1.Views
             this.buttonNavEquipos.Text = "Equipos";
             this.buttonNavEquipos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonNavEquipos.UseVisualStyleBackColor = true;
+            this.buttonNavEquipos.Click += new System.EventHandler(this.buttonNavEquipos_Click_1);
             // 
             // buttonNavAlquileres
             // 
@@ -209,6 +211,7 @@ namespace Proyecto_MVP_1.Views
             this.buttonNavAlquileres.Text = "Alquileres";
             this.buttonNavAlquileres.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonNavAlquileres.UseVisualStyleBackColor = true;
+            this.buttonNavAlquileres.Click += new System.EventHandler(this.buttonNavAlquileres_Click_1);
             // 
             // panelSidebarBottom
             // 
@@ -235,6 +238,7 @@ namespace Proyecto_MVP_1.Views
             this.buttonLogout.Text = "Cerrar sesión";
             this.buttonLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonLogout.UseVisualStyleBackColor = true;
+            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click_1);
             // 
             // panelMain
             // 

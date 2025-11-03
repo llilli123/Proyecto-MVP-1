@@ -88,6 +88,7 @@
     <Compile Include="Models\Class1.cs" />
     <Compile Include="Models\UsuarioModel.cs" />
     <Compile Include="Presenters\Class1.cs" />
+    <Compile Include="Presenters\DashboardPresenter.cs" />
     <Compile Include="Presenters\ILoginView.cs" />
     <Compile Include="Presenters\LoginPresenter.cs" />
     <Compile Include="Views\AlquileresView.cs">
@@ -114,6 +115,7 @@
     <Compile Include="Views\EquiposView.Designer.cs">
       <DependentUpon>EquiposView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Interfaces\IDashboardView.cs" />
     <Compile Include="Views\LoginView.cs">
       <SubType>Form</SubType>
     </Compile>
