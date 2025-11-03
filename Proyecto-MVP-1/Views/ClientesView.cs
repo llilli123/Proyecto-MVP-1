@@ -93,6 +93,11 @@ namespace Proyecto_MVP_1.Views
         {
             GuardarCliente?.Invoke(this, EventArgs.Empty);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
 

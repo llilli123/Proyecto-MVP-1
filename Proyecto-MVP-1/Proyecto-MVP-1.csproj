@@ -88,9 +88,7 @@
     </Compile>
     <Compile Include="Presenters\ClientePresenter.cs" />
     <Compile Include="Repository\ClienteRepository.cs" />
-    <Compile Include="Models\Class1.cs" />
     <Compile Include="Models\UsuarioModel.cs" />
-    <Compile Include="Presenters\Class1.cs" />
     <Compile Include="Presenters\DashboardPresenter.cs" />
     <Compile Include="Presenters\ILoginView.cs" />
     <Compile Include="Presenters\LoginPresenter.cs" />

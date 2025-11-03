@@ -1,18 +1,21 @@
-﻿using Proyecto_MVP_1.Views.Interfaces;
-using Proyecto_MVP_1.Views; // Para poder llamar a 'ClientesView', etc.
+﻿using Proyecto_MVP_1.Views; // Para poder llamar a 'ClientesView', etc.
+using Proyecto_MVP_1.Views.Interfaces;
 using System;
+using System.Windows.Forms;
 
 namespace Proyecto_MVP_1.Presenters
 {
     public class DashboardPresenter
     {
         private readonly IDashboardView _view;
+        private readonly Form _dashboardForm;
 
         // --- ELIMINAMOS EL REPOSITORIO ---
         // El constructor ahora solo recibe la vista
         public DashboardPresenter(IDashboardView view)
         {
             _view = view;
+            _dashboardForm = (Form)view;
 
             // Conectamos SOLO los clics de los botones
             _view.NavigateToClientes += OnNavigateToClientes;
@@ -26,35 +29,33 @@ namespace Proyecto_MVP_1.Presenters
         // --- Lógica de Navegación ---
         private void OnNavigateToClientes(object sender, EventArgs e)
         {
-            var clientesView = new ClientesView();
-            // new ClientesPresenter(clientesView, ...); // Si Clientes usa MVP
-            clientesView.Show();
-            _view.Hide();
+            var v = new ClientesView();
+            // Si hay MVP: new ClientesPresenter(v, ...);
+
+            // ① cuando se cierre el hijo, vuelve a mostrar el MISMO dashboard
+            v.FormClosed += (_, __) => _dashboardForm.Show();
+
+            // ② asigna dueño para evitar “huérfanos”
+            v.Show(_dashboardForm);      // <-- IMPORTANTÍSIMO: Owner = dashboard
+
+            // ③ oculta el dashboard (NO lo cierres)
+            _dashboardForm.Hide();
         }
 
         private void OnNavigateToEquipos(object sender, EventArgs e)
         {
-            var equiposView = new EquiposView();
-            // new EquiposPresenter(equiposView, ...);
-            equiposView.Show();
-            _view.Hide();
+            var v = new EquiposView();
+            v.FormClosed += (_, __) => _dashboardForm.Show();
+            v.Show(_dashboardForm);
+            _dashboardForm.Hide();
         }
 
         private void OnNavigateToAlquileres(object sender, EventArgs e)
         {
-            var alquileresView = new AlquileresView();
-            // new AlquileresPresenter(alquileresView, ...);
-            alquileresView.Show();
-            _view.Hide();
-        }
-
-        private void OnNavigateToDashboard(object s, EventArgs e)
-        {
-            var v = new ClientesView();
-            // si tienes MVP para Clientes, crea su presenter aquí
-            v.FormClosed += (_, __) => _view.Show();
-            v.Show();
-            _view.Hide();
+            var v = new AlquileresView();
+            v.FormClosed += (_, __) => _dashboardForm.Show();
+            v.Show(_dashboardForm);
+            _dashboardForm.Hide();
         }
 
         private void OnLogout(object sender, EventArgs e)
