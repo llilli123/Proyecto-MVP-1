@@ -69,7 +69,7 @@
             this.lblDemo.ForeColor = System.Drawing.Color.Gray;
             this.lblDemo.Location = new System.Drawing.Point(23, 395);
             this.lblDemo.Name = "lblDemo";
-            this.lblDemo.Size = new System.Drawing.Size(273, 13);
+            this.lblDemo.Size = new System.Drawing.Size(225, 13);
             this.lblDemo.TabIndex = 9;
             this.lblDemo.Text = "Demo: usuario: admin / contraseña: admin";
             // 
@@ -80,7 +80,7 @@
             this.lblCopy.ForeColor = System.Drawing.Color.Gray;
             this.lblCopy.Location = new System.Drawing.Point(23, 377);
             this.lblCopy.Name = "lblCopy";
-            this.lblCopy.Size = new System.Drawing.Size(224, 13);
+            this.lblCopy.Size = new System.Drawing.Size(215, 13);
             this.lblCopy.TabIndex = 8;
             this.lblCopy.Text = "RentalPrime © 2025. Todos los derechos.";
             // 
@@ -97,6 +97,7 @@
             this.btnLogin.TabIndex = 7;
             this.btnLogin.Text = "Iniciar sesión";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // txtPassword
             // 
@@ -115,7 +116,7 @@
             this.lblPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.lblPassword.Location = new System.Drawing.Point(23, 249);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(68, 15);
+            this.lblPassword.Size = new System.Drawing.Size(66, 15);
             this.lblPassword.TabIndex = 5;
             this.lblPassword.Text = "Contraseña";
             // 
@@ -135,7 +136,7 @@
             this.lblUser.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.lblUser.Location = new System.Drawing.Point(23, 184);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(49, 15);
+            this.lblUser.Size = new System.Drawing.Size(47, 15);
             this.lblUser.TabIndex = 3;
             this.lblUser.Text = "Usuario";
             // 
@@ -146,7 +147,7 @@
             this.lblSubtitle.ForeColor = System.Drawing.Color.DimGray;
             this.lblSubtitle.Location = new System.Drawing.Point(23, 140);
             this.lblSubtitle.Name = "lblSubtitle";
-            this.lblSubtitle.Size = new System.Drawing.Size(246, 15);
+            this.lblSubtitle.Size = new System.Drawing.Size(228, 15);
             this.lblSubtitle.TabIndex = 2;
             this.lblSubtitle.Text = "Sistema de Gestión de Alquiler de Equipos";
             // 
@@ -156,7 +157,7 @@
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lblTitle.Location = new System.Drawing.Point(22, 116);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(96, 21);
+            this.lblTitle.Size = new System.Drawing.Size(98, 21);
             this.lblTitle.TabIndex = 1;
             this.lblTitle.Text = "RentalPrime";
             // 
@@ -170,7 +171,7 @@
             this.picLogo.TabIndex = 0;
             this.picLogo.TabStop = false;
             // 
-            // LoginForm
+            // LoginView
             // 
             this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -182,7 +183,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "LoginForm";
+            this.Name = "LoginView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Iniciar sesión - RentalPrime";
             this.pnlCard.ResumeLayout(false);

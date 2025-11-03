@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoLoginMVP.Presenters;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,15 @@ namespace Proyecto_MVP_1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginView());
+
+            // Crear la vista
+            var loginView = new LoginView();
+
+            // Crear el presenter y asociarlo a la vista
+            var loginPresenter = new LoginPresenter(loginView);
+
+            // Ejecutar la aplicación con la vista
+            Application.Run(loginView);
         }
     }
 }

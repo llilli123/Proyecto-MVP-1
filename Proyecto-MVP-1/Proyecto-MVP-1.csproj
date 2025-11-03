@@ -86,7 +86,10 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Class1.cs" />
+    <Compile Include="Models\UsuarioModel.cs" />
     <Compile Include="Presenters\Class1.cs" />
+    <Compile Include="Presenters\ILoginView.cs" />
+    <Compile Include="Presenters\LoginPresenter.cs" />
     <Compile Include="Views\AlquileresView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\EquiposView.resx">
       <DependentUpon>EquiposView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LoginView.resx">
+      <DependentUpon>LoginView.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Models\Entities\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
